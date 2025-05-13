@@ -186,14 +186,18 @@
 */
 
 body {
+    position: relative;
     max-width: 1440px;
-    align-items: center;
-    align-content: center;
     margin: 0 auto;
+    height: 100svh;
+}
+
+body * {
     font-family: "adelle-sans", sans-serif;
     font-weight: 400;
     letter-spacing: var(--tracking-normal);
     font-style: normal;
+    border-radius: var(--radius);
 }
 
 @layer base {
@@ -210,7 +214,7 @@ body {
 Navbar
 */
 .navbar {
-    @apply px-8 py-4 border-b border-gray-700 flex items-center justify-between;
+    @apply px-8 py-4 h-fit border-b border-accent flex items-center justify-between;
 }
 
 .navbar .navbar-navigation {
@@ -219,4 +223,33 @@ Navbar
 
 .navbar .navbar-toggle {
     @apply flex items-center justify-center w-10 h-10 rounded-full;
+}
+
+/*  Component Styles 
+Audio Player
+*/
+
+.audio-player {
+    @apply w-fit absolute bottom-4 left-4;
+}
+
+.audio-player .disc {
+    @apply w-fit h-fit;
+}
+
+.rotating-element {
+    animation: rotate360 2s linear infinite;
+    /* Apply the rotation animation */
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+        /* Start at 0 degrees */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* End at 360 degrees, completing a full rotation */
+    }
 }

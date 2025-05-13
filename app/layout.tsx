@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar.tsx";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
+import MusicPlayer from "@/components/MusicPlayer";
 
 const adellesans = localFont({
     src: [
@@ -51,6 +52,7 @@ export default function RootLayout({
                 >
                     <Navbar />
                     {children}
+                    <MusicPlayer />
                 </ThemeProvider>
             </body>
         </html>
