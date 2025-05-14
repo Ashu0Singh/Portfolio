@@ -1,0 +1,11 @@
+{
+    "hero": {
+        "title": "Hey, I'm Ashutosh 👋🏼",
+        "subtitle" : "Backend-focused full-stack developer building scalable, resilient systems",
+        "description": "I’ve designed distributed data pipelines processing 40M+ records and led zero-downtime migrations across 27 microservices. I specialize in production-ready, cloud-native architectures and real-time applications — always with clean code and clear results",
+        "image": {
+            "src": "",
+            "alt": ""
+        }
+    }
+}

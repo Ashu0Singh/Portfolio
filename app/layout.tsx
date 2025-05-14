@@ -2,35 +2,9 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar.tsx";
-import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import MusicPlayer from "@/components/MusicPlayer";
-
-const adellesans = localFont({
-    src: [
-        {
-            path: "../fonts/adellesans-regular-webfont.ttf",
-            weight: "400",
-            style: "normal",
-        },
-        {
-            path: "../fonts/adellesans-semibold-webfont.ttf",
-            weight: "500",
-            style: "semibold",
-        },
-        {
-            path: "../fonts/adellesans-bold-webfont.ttf",
-            weight: "600",
-            style: "bold",
-        },
-        {
-            path: "../fonts/adellesans-extrabold-webfont.ttf",
-            weight: "700",
-            style: "extrabold",
-        },
-    ],
-    variable: "--font-adellesans", // optional if using CSS vars
-});
+import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
     title: "Homepage",
@@ -44,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${adellesans.className} antialiased`}>
+            <body className={`${GeistSans.className} antialiased`}>
                 <ThemeProvider
                     attribute={"class"}
                     defaultTheme="system"

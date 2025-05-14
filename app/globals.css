@@ -193,7 +193,7 @@ body {
 }
 
 body * {
-    font-family: "adelle-sans", sans-serif;
+    font-family: inherit;
     font-weight: 400;
     letter-spacing: var(--tracking-normal);
     font-style: normal;
@@ -214,11 +214,15 @@ body * {
 Navbar
 */
 .navbar {
-    @apply px-8 py-4 h-fit border-b border-accent flex items-center justify-between;
+    @apply px-8 py-4 h-fit border-b border-b-neutral-800 flex items-center justify-between rounded-b-none;
+}
+
+.navbar .navbar-logo {
+    @apply font-bold text-xl;
 }
 
 .navbar .navbar-navigation {
-    @apply flex gap-15 text-xl;
+    @apply flex gap-15 text-lg;
 }
 
 .navbar .navbar-toggle {
@@ -230,26 +234,34 @@ Audio Player
 */
 
 .audio-player {
-    @apply w-fit absolute bottom-4 left-4;
+    @apply w-fit absolute bottom-8 left-8;
 }
 
 .audio-player .disc {
     @apply w-fit h-fit;
 }
 
-.rotating-element {
-    animation: rotate360 2s linear infinite;
-    /* Apply the rotation animation */
+
+/*  Page Styles 
+Homepage
+*/
+
+.homepage {
+    @apply flex flex-col items-center justify-center;
 }
 
-@keyframes rotate360 {
-    from {
-        transform: rotate(0deg);
-        /* Start at 0 degrees */
-    }
+.homepage .hero {
+    @apply h-[93vh] flex flex-col items-center justify-center gap-4 max-w-[600px] p-4;
+}
 
-    to {
-        transform: rotate(360deg);
-        /* End at 360 degrees, completing a full rotation */
-    }
+.homepage .hero .hero-title {
+    @apply text-6xl font-extrabold text-center tracking-tighter text-foreground/80;
+}
+
+.homepage .hero .hero-subtitle {
+    @apply text-3xl font-bold text-center tracking-tight text-secondary-foreground/70;
+}
+
+.homepage .hero .hero-description {
+    @apply text-xl text-center tracking-normal text-secondary-foreground/60;
 }

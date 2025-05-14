@@ -4,10 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { GeistMono } from "geist/font/mono";
 
 const Navbar = () => {
     return (
         <div className="navbar">
+            <Link href="/" className={`${GeistMono.className} navbar-logo`}>
+                AS
+            </Link>
             <div className="navbar-navigation">
                 <Link href="/">Home</Link>
                 <Link href="/portfolio">Work</Link>
