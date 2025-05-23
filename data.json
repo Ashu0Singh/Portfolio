@@ -1,11 +1,49 @@
 {
     "hero": {
-        "title": "Hey, I'm Ashutosh 👋🏼",
-        "subtitle" : "Backend-focused full-stack developer building scalable, resilient systems",
-        "description": "I’ve designed distributed data pipelines processing 40M+ records and led zero-downtime migrations across 27 microservices. I specialize in production-ready, cloud-native architectures and real-time applications — always with clean code and clear results",
-        "image": {
-            "src": "",
-            "alt": ""
+        "title": "Hey, I'm Ashu 👋🏼",
+        "subtitle": "Backend-focused full-stack developer building scalable, resilient systems",
+        "description": "I’ve designed distributed data pipelines processing 40M+ records and led zero-downtime migrations across 27 microservices. I specialize in production-ready, cloud-native architectures and real-time applications — always with clean code and clear results"
+    },
+    "workExperience": [
+        {
+            "company": "Swym",
+            "url": "https://swym.it",
+            "position": "Backend Engineer",
+            "about": "Swym helps e-commerce brands on platforms like Shopify and Magento deliver personalized shopping experiences. Over 40,000 merchants across nearly 100 countries use Swym’s tools to drive engagement and retargeting. The company operates as a remote-first team of 80+ employees and is backed by Techstars Seattle (2017).",
+            "description": [
+                "Developed and maintained a service to sync Shopify staff and store location data across all merchants.",
+                "Designed and implemented a housekeeping system that redacted over 50M customer records for GDPR compliance.",
+                "Built backend support for Shopify Markets integration from the ground up.",
+                "Led the migration of in-house MongoDB to MongoDB Atlas across 27 services, achieving zero downtime and minimal disruption."
+            ],
+            "techStack":["Clojure", "Redis", "PostgreSQL", "MongoDB", "DocDB", "Azure", "Docker"]
+        },
+        {
+            "company": "PurpleSac",
+            "url": "https://purplesac.com",
+            "position": "Shopify Developer",
+            "about": "Purplesac is a mother-daughter team focused on sustainability. Born from a school recycling project, the brand aims to reduce environmental impact by offering eco-friendly alternatives to traditional bags—addressing both landfill waste and harmful production materials.",
+            "description": [
+                "Built and customized the entire Shopify storefront to align with branding and improve customer experience.",
+                "Managed and maintained their Shopify store to ensure reliable performance and product updates.",
+                "Launched and managed their Kickstarter campaign, successfully reaching the funding goal.",
+                "Led the marketing and analytics team to optimize campaigns and customer engagement.",
+                "Implemented automated email flows to collect customer reviews and enhance post-purchase communication."
+            ],
+            "techStack":["HTML", "CSS", "Javascript", "Liquid", "Shopify"]
+        },
+        {
+            "company": "Farmershaat",
+            "url": "https://github.com/FarmersHaat/FarmersHaat",
+            "position": "Full Stack Developer",
+            "about": "Farmershaat is a natural farming company based in Lucknow, Uttar Pradesh, offering nutrition rich cold-pressed coconut and mustard oils as their initial products. Their mission is to provide clean and organic household supplies to every family in different parts of our country.",
+            "description": [
+                "Developed the web application using React.js for the frontend and Strapi as a headless CMS for the backend.",
+                "Chose a self-hosted tech stack to ensure full control and uninterrupted operations without third-party dependencies.",
+                "Integrated Razorpay to support multiple payment methods, streamlining the checkout experience.",
+                "Built and configured a full deployment pipeline on Railway.app with automated deployments and integrated database backups every few hours."
+            ],
+            "techStack": ["ReactJS", "Strapi", "PostgreSQL", "MongoDB", "Railway.app", "Razorpay"]
         }
-    }
+    ]
 }
