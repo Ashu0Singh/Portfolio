@@ -1,6 +1,7 @@
 import { CardProps } from "@/types";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
+import * as motion from "motion/react-client";
 
 const Card = ({
     cardTitle,
@@ -9,9 +10,15 @@ const Card = ({
     url,
     about,
     techStack,
+    delay = 0,
 }: CardProps) => {
     return (
-        <div className="card">
+        <motion.div
+            className="card"
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay, duration: 0.5 }}
+        >
             {url ? (
                 <Link href={url} className="card-link">
                     {companyName}
@@ -43,13 +50,17 @@ const Card = ({
             {techStack && (
                 <div className="card-footer">
                     {techStack.map((stack, index) => (
-                        <Badge variant="outline" key={index} className="text-lg">
+                        <Badge
+                            variant="outline"
+                            key={index}
+                            className="text-lg"
+                        >
                             {stack}
                         </Badge>
                     ))}
                 </div>
             )}
-        </div>
+        </motion.div>
     );
 };
 

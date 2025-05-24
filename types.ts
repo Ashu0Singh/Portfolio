@@ -10,4 +10,5 @@ export type CardProps = {
     url: string | undefined;
     about: string | undefined;
     techStack: Array<string> | undefined;
+    delay?: number;
 };

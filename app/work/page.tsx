@@ -20,6 +20,7 @@ export default function Work() {
                             url={url}
                             companyName={company}
                             techStack={techStack}
+                            delay={(index + 1) * 0.3}
                         ></Card>
                     ),
                 )}
