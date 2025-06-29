@@ -53,7 +53,7 @@ const Card = ({
                         <Badge
                             variant="outline"
                             key={index}
-                            className="text-lg"
+                            className="text-sm"
                         >
                             {stack}
                         </Badge>

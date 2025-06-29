@@ -24,6 +24,13 @@ export default function RootLayout({
                     defaultTheme="system"
                     enableSystem
                 >
+                    <div className="fixed left-0 top-0 -z-10 h-full w-full">
+                        {/* Light Mode Background */}
+                        <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:hidden" />
+
+                        {/* Dark Mode Background */}
+                        <div className="absolute inset-0 -z-10 h-full w-full hidden dark:block [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]" />
+                    </div>
                     <Navbar />
                     {children}
                     <MusicPlayer />

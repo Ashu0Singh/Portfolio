@@ -196,7 +196,7 @@ body * {
 }
 
 h1{
-    @apply block text-6xl tracking-tighter font-extrabold text-foreground/80;
+    @apply block text-4xl tracking-tighter font-extrabold text-foreground/80;
 }
 
 @layer base {
@@ -225,7 +225,7 @@ Navbar
 }
 
 .navbar .navbar-navigation {
-    @apply flex gap-15 text-lg;
+    @apply flex gap-15 text-sm;
 }
 
 .navbar .navbar-actions {
@@ -273,11 +273,11 @@ Card
 }
 
 .card .card-link {
-    @apply block text-3xl tracking-tighter font-extrabold border-b rounded-none p-4;
+    @apply block text-2xl tracking-tighter font-extrabold border-b rounded-none p-4;
 }
 
 .card .card-title {
-    @apply block text-xl tracking-tight font-bold text-foreground/80;
+    @apply block text-lg tracking-tight font-bold text-foreground/80;
 }
 
 .card .card-about {
@@ -285,23 +285,23 @@ Card
 }
 
 .card .card-about .card-about-title {
-    @apply block text-2xl tracking-tighter font-bold text-foreground;
+    @apply block text-lg tracking-tighter font-bold text-foreground;
 }
 
 .card .card-about .card-about-text {
-    @apply block text-lg tracking-wide font-normal text-foreground/80;
+    @apply block text-sm tracking-wide font-normal text-foreground/80;
 }
 
 .card .card-content {
-    @apply block text-lg tracking-wide font-normal text-foreground/60 p-4;
+    @apply block text-sm tracking-wide font-normal text-foreground/60 p-4;
 }
 
 .card .card-content .card-content-title {
-    @apply block text-2xl tracking-tighter font-bold text-foreground;
+    @apply block text-lg tracking-tighter font-bold text-foreground;
 }
 
 .card .card-content .card-content-desc .card-desc{
-    @apply block text-lg tracking-wider font-normal text-foreground/80;
+    @apply block text-sm tracking-wide font-normal text-foreground/80;
 }
 
 .card .card-footer{
@@ -321,7 +321,7 @@ Homepage
 }
 
 .homepage .hero .hero-title {
-    @apply w-[80%] text-5xl font-extrabold text-center tracking-tight text-foreground/80 text-wrap;
+    @apply w-[80%] text-4xl font-extrabold text-center tracking-tight text-foreground/80 text-wrap;
 }
 
 .homepage .hero .hero-subtitle {
@@ -329,11 +329,11 @@ Homepage
 }
 
 .homepage .hero .hero-description {
-    @apply w-[90%] text-xl text-center tracking-normal text-secondary-foreground/60 text-wrap;
+    @apply w-[90%] text-sm text-center tracking-wide text-secondary-foreground/60 text-wrap;
 }
 
 .work {
-    @apply h-[93svh] p-4 md:p-8 overflow-scroll flex flex-col gap-8;
+    @apply h-[93svh] p-4 md:p-6 overflow-y-scroll overflow-x-hidden flex flex-col gap-8;
 }
 
 .work .work-header{
